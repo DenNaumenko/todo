@@ -1,0 +1,9 @@
+{
+    "server": {
+        "baseDir": ["./dist"], // Шлях до папки зі збіркою
+        "routes": {
+            "/node_modules": "node_modules" // Додатковий маршрут для node_modules
+        }
+    },
+    "files": ["./dist/*.html", "./dist/*.js"] // Файли, які спричиняють перезавантаження
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>ToDo List Plugin</title>
+  </head>
+  <body>
+    <div class="layout">
+      <input type="checkbox" class="burger-menu" id="burger-menu" />
+      <label for="burger-menu" class="burger-label"></label>
+      <div class="header">
+        <div class="logo"><img src="./icons/todo-1.svg" alt="todo" /></div>
+        <nav class="navigation">
+          <ul class="navigation__items">
+            <li class="navigation__item"><a href="#">link1</a></li>
+            <li class="navigation__item"><a href="#">link2</a></li>
+            <li class="navigation__item"><a href="#">link3</a></li>
+            <li class="navigation__item"><a href="#">link4</a></li>
+            <li class="navigation__item"><a href="#">link5</a></li>
+            <li class="navigation__item"><a href="#">link6</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="todo__wrapper">
+          <div class="todo__wrapper-form">
+            <h1 class="todo__form-title">Task List</h1>
+            <div class="todo__wrapper-form-input">
+              <input
+                id="taskInput"
+                class="todo__input"
+                type="text"
+                placeholder="Add new task"
+              />
+              <button id="addButton" class="add__button">add</button>
+            </div>
+          </div>
+          <ul id="taskList" class="task__list"></ul>
+        </div>
+      </div>
+      <div class="footer">
+        <nav class="navigation_footer">
+          <ul class="navigation__items">
+            <li class="navigation__item"><a href="#">link1</a></li>
+            <li class="navigation__item"><a href="#">link2</a></li>
+            <li class="navigation__item"><a href="#">link3</a></li>
+            <li class="navigation__item"><a href="#">link4</a></li>
+            <li class="navigation__item"><a href="#">link5</a></li>
+            <li class="navigation__item"><a href="#">link6</a></li>
+          </ul>
+        </nav>
+        <div class="logo"><img src="./icons/todo-1.svg" alt="todo" /></div>
+      </div>
+    </div>
+    <script src="../dist/bundle.js"></script>
+  </body>
+</html>
